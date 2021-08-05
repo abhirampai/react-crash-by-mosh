@@ -3,6 +3,7 @@ import NavBar from "./components/navbar";
 // import Counters from "./components/counters";
 import React, { Component } from "react";
 import CounterFour from "./components/UseReducerHook.jsx/CounterFour";
+import UserContextComponent from "./components/UseContextHook/UserContextComponent";
 // import CounterReducer from "./components/UseReducerHook.jsx/CounterReducer";
 // import CounterTwo from "./components/UseReducerHook.jsx/CounterTwo";
 // import CounterThree from "./components/UseReducerHook.jsx/CounterThree";
@@ -14,6 +15,8 @@ import CounterFour from "./components/UseReducerHook.jsx/CounterFour";
 // import UpdateDocumentTitle from "./components/UseStateAndUseEffect/UpdateDocumentTitle";
 // import HookMouse from "./components/UseStateAndUseEffect/HookMouse";
 // import UseMemoCounters from "./components/UseMemoHook/UseMemoCounters";
+export const UserContext = React.createContext();
+export const ChannelContext = React.createContext();
 class App extends Component {
   state = {
     counters: [
@@ -84,6 +87,11 @@ class App extends Component {
           {/* <FocusInput /> */}
           {/* <HookTimer /> */}
           <CounterFour />
+          <UserContext.Provider value="Abhiram Pai">
+            <ChannelContext.Provider value="youtube">
+              <UserContextComponent />
+            </ChannelContext.Provider>
+          </UserContext.Provider>
         </main>
       </React.Fragment>
     );
