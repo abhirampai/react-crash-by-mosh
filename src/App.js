@@ -1,9 +1,10 @@
 import "./App.css";
 import NavBar from "./components/navbar";
-import Counters from "./components/counters";
+// import Counters from "./components/counters";
 import React, { Component } from "react";
-import HookCounter from "./components/HookCounter";
-import UsingObjects from "./components/UsingObjects";
+// import HookCounter from "./components/HookCounter";
+// import UsingObjects from "./components/UsingObjects";
+import UpdateDocumentTitle from "./components/UpdateDocumentTitle";
 class App extends Component {
   state = {
     counters: [
@@ -67,7 +68,8 @@ class App extends Component {
             onDelete={this.handleDelete}
           /> */}
           {/* <HookCounter /> */}
-          <UsingObjects />
+          {/* <UsingObjects /> */}
+          <UpdateDocumentTitle />
         </main>
       </React.Fragment>
     );
