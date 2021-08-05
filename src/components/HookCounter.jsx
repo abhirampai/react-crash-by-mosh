@@ -17,6 +17,12 @@ const HookCounter = () => {
       <button onClick={decrementCount} className="btn btn-danger btn-sm m-2">
         Decrement
       </button>
+      <button
+        onClick={() => setCount(0)}
+        className="btn btn-warning btn-sm m-2"
+      >
+        Reset
+      </button>
     </div>
   );
 };
