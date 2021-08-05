@@ -3,11 +3,11 @@ import NavBar from "./components/navbar";
 // import Counters from "./components/counters";
 import React, { Component } from "react";
 import ParentComponent from "./components/UseCallBackHook/ParentComponent";
-// import HookCounter from "./components/HookCounter";
-// import UsingObjects from "./components/UsingObjects";
-// import UpdateDocumentTitle from "./components/UpdateDocumentTitle";
-// import HookMouse from "./components/HookMouse";
-// import UseMemoCounters from "./components/UseMemoCounters";
+// import HookCounter from "./components/UseStateAndUseEffect/HookCounter";
+// import UsingObjects from "./components/UseStateAndUseEffect/UsingObjects";
+// import UpdateDocumentTitle from "./components/UseStateAndUseEffect/UpdateDocumentTitle";
+// import HookMouse from "./components/UseStateAndUseEffect/HookMouse";
+// import UseMemoCounters from "./components/UseMemoHook/UseMemoCounters";
 class App extends Component {
   state = {
     counters: [
