@@ -2,11 +2,12 @@ import "./App.css";
 import NavBar from "./components/navbar";
 // import Counters from "./components/counters";
 import React, { Component } from "react";
+import ParentComponent from "./components/UseCallBackHook/ParentComponent";
 // import HookCounter from "./components/HookCounter";
 // import UsingObjects from "./components/UsingObjects";
 // import UpdateDocumentTitle from "./components/UpdateDocumentTitle";
 // import HookMouse from "./components/HookMouse";
-import UseMemoCounters from "./components/UseMemoCounters";
+// import UseMemoCounters from "./components/UseMemoCounters";
 class App extends Component {
   state = {
     counters: [
@@ -73,7 +74,7 @@ class App extends Component {
           {/* <UsingObjects /> */}
           {/* <UpdateDocumentTitle /> */}
           {/* <HookMouse /> */}
-          <UseMemoCounters />
+          <ParentComponent />
         </main>
       </React.Fragment>
     );
