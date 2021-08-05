@@ -2,7 +2,8 @@ import "./App.css";
 import NavBar from "./components/navbar";
 // import Counters from "./components/counters";
 import React, { Component } from "react";
-import ParentComponent from "./components/UseCallBackHook/ParentComponent";
+import FocusInput from "./components/UseRefHook/FocusInput";
+// import ParentComponent from "./components/UseCallBackHook/ParentComponent";
 // import HookCounter from "./components/UseStateAndUseEffect/HookCounter";
 // import UsingObjects from "./components/UseStateAndUseEffect/UsingObjects";
 // import UpdateDocumentTitle from "./components/UseStateAndUseEffect/UpdateDocumentTitle";
@@ -74,7 +75,8 @@ class App extends Component {
           {/* <UsingObjects /> */}
           {/* <UpdateDocumentTitle /> */}
           {/* <HookMouse /> */}
-          <ParentComponent />
+          {/* <ParentComponent /> */}
+          <FocusInput />
         </main>
       </React.Fragment>
     );
