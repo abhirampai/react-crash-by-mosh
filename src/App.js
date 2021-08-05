@@ -2,6 +2,7 @@ import "./App.css";
 import NavBar from "./components/navbar";
 import Counters from "./components/counters";
 import React, { Component } from "react";
+import HookCounter from "./components/HookCounter";
 class App extends Component {
   state = {
     counters: [
@@ -57,13 +58,14 @@ class App extends Component {
           totalCounters={this.state.counters.filter((c) => c.value > 0).length}
         />
         <main className="container">
-          <Counters
+          {/* <Counters
             counters={this.state.counters}
             onReset={this.handleReset}
             onIncrement={this.handleIncrement}
             onDecrement={this.handleDecrement}
             onDelete={this.handleDelete}
-          />
+          /> */}
+          <HookCounter />
         </main>
       </React.Fragment>
     );
