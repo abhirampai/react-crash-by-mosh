@@ -3,6 +3,7 @@ import NavBar from "./components/navbar";
 import Counters from "./components/counters";
 import React, { Component } from "react";
 import HookCounter from "./components/HookCounter";
+import UsingObjects from "./components/UsingObjects";
 class App extends Component {
   state = {
     counters: [
@@ -65,7 +66,8 @@ class App extends Component {
             onDecrement={this.handleDecrement}
             onDelete={this.handleDelete}
           /> */}
-          <HookCounter />
+          {/* <HookCounter /> */}
+          <UsingObjects />
         </main>
       </React.Fragment>
     );
