@@ -2,8 +2,9 @@ import "./App.css";
 import NavBar from "./components/navbar";
 // import Counters from "./components/counters";
 import React, { Component } from "react";
+import CounterReducer from "./components/UseReducerHook.jsx/CounterReducer";
 // import FocusInput from "./components/UseRefHook/FocusInput";
-import HookTimer from "./components/UseRefHook/HookTimer";
+// import HookTimer from "./components/UseRefHook/HookTimer";
 // import ParentComponent from "./components/UseCallBackHook/ParentComponent";
 // import HookCounter from "./components/UseStateAndUseEffect/HookCounter";
 // import UsingObjects from "./components/UseStateAndUseEffect/UsingObjects";
@@ -78,7 +79,8 @@ class App extends Component {
           {/* <HookMouse /> */}
           {/* <ParentComponent /> */}
           {/* <FocusInput /> */}
-          <HookTimer />
+          {/* <HookTimer /> */}
+          <CounterReducer />
         </main>
       </React.Fragment>
     );
