@@ -5,7 +5,8 @@ import React, { Component } from "react";
 // import HookCounter from "./components/HookCounter";
 // import UsingObjects from "./components/UsingObjects";
 // import UpdateDocumentTitle from "./components/UpdateDocumentTitle";
-import HookMouse from "./components/HookMouse";
+// import HookMouse from "./components/HookMouse";
+import UseMemoCounters from "./components/UseMemoCounters";
 class App extends Component {
   state = {
     counters: [
@@ -71,7 +72,8 @@ class App extends Component {
           {/* <HookCounter /> */}
           {/* <UsingObjects /> */}
           {/* <UpdateDocumentTitle /> */}
-          <HookMouse />
+          {/* <HookMouse /> */}
+          <UseMemoCounters />
         </main>
       </React.Fragment>
     );
