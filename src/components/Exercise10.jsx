@@ -13,7 +13,7 @@ export default function Exercise10() {
     const formattedText = textBeforeCursor.toUpperCase() + textAfterCursor;
 
     const newCursorPosition = textBeforeCursor.length;
-    console.log(newCursorPosition);
+
     return [formattedText, newCursorPosition];
   };
   const handleChange = (e) => {
