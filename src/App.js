@@ -2,8 +2,9 @@ import "./App.css";
 import NavBar from "./components/navbar";
 // import Counters from "./components/counters";
 import React, { Component } from "react";
-import CounterFour from "./components/UseReducerHook.jsx/CounterFour";
-import UserContextComponent from "./components/UseContextHook/UserContextComponent";
+import Exercise10 from "./components/Exercise10";
+// import CounterFour from "./components/UseReducerHook.jsx/CounterFour";
+// import UserContextComponent from "./components/UseContextHook/UserContextComponent";
 // import CounterReducer from "./components/UseReducerHook.jsx/CounterReducer";
 // import CounterTwo from "./components/UseReducerHook.jsx/CounterTwo";
 // import CounterThree from "./components/UseReducerHook.jsx/CounterThree";
@@ -86,12 +87,13 @@ class App extends Component {
           {/* <ParentComponent /> */}
           {/* <FocusInput /> */}
           {/* <HookTimer /> */}
-          <CounterFour />
+          {/* <CounterFour />
           <UserContext.Provider value="Abhiram Pai">
             <ChannelContext.Provider value="youtube">
               <UserContextComponent />
             </ChannelContext.Provider>
-          </UserContext.Provider>
+          </UserContext.Provider> */}
+          <Exercise10 />
         </main>
       </React.Fragment>
     );
