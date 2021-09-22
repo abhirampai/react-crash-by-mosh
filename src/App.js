@@ -1,8 +1,9 @@
 import "./App.css";
-import NavBar from "./components/navbar";
+// import NavBar from "./components/navbar";
 // import Counters from "./components/counters";
 import React, { Component } from "react";
-import Exercise10 from "./components/Exercise10";
+// import Exercise10 from "./components/Exercise10";
+import SampleForm from "./components/SampleForm";
 // import CounterFour from "./components/UseReducerHook.jsx/CounterFour";
 // import UserContextComponent from "./components/UseContextHook/UserContextComponent";
 // import CounterReducer from "./components/UseReducerHook.jsx/CounterReducer";
@@ -69,9 +70,6 @@ class App extends Component {
   render() {
     return (
       <React.Fragment>
-        <NavBar
-          totalCounters={this.state.counters.filter((c) => c.value > 0).length}
-        />
         <main className="container">
           {/* <Counters
             counters={this.state.counters}
@@ -93,7 +91,8 @@ class App extends Component {
               <UserContextComponent />
             </ChannelContext.Provider>
           </UserContext.Provider> */}
-          <Exercise10 />
+          {/* <Exercise10 /> */}
+          <SampleForm />
         </main>
       </React.Fragment>
     );
