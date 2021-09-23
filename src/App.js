@@ -3,7 +3,8 @@ import "./App.css";
 // import Counters from "./components/counters";
 import React, { Component } from "react";
 // import Exercise10 from "./components/Exercise10";
-import SampleForm from "./components/SampleForm";
+// import SampleForm from "./components/SampleForm";
+import SampleForm2 from "./components/SampleForm2";
 // import CounterFour from "./components/UseReducerHook.jsx/CounterFour";
 // import UserContextComponent from "./components/UseContextHook/UserContextComponent";
 // import CounterReducer from "./components/UseReducerHook.jsx/CounterReducer";
@@ -92,7 +93,8 @@ class App extends Component {
             </ChannelContext.Provider>
           </UserContext.Provider> */}
           {/* <Exercise10 /> */}
-          <SampleForm />
+          {/* <SampleForm /> */}
+          <SampleForm2 />
         </main>
       </React.Fragment>
     );

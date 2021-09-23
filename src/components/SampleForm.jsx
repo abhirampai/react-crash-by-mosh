@@ -4,6 +4,8 @@ const initForm = {
   email: "",
   password: "",
   confirmPassword: "",
+  role: "",
+  favorite_language: "",
 };
 const SampleForm = () => {
   const [form, setForm] = useState(initForm);
@@ -11,12 +13,7 @@ const SampleForm = () => {
   const validateForm = () => {
     let formValid = "";
     let errorMessage = "";
-    const re =
-      /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    if (!re.test(String(form.email).toLowerCase())) {
-      errorMessage = "Please check if email is valid";
-      formValid = false;
-    } else if (form.email === "" || form.password === "") {
+    if (form.email === "" || form.password === "") {
       errorMessage = "Please check email and password";
       formValid = false;
     } else if (form.password !== form.confirmPassword) {
@@ -56,13 +53,13 @@ const SampleForm = () => {
           <b>Email</b>
         </label>
         <input
-          type="text"
+          type="email"
           placeholder="Enter Email"
           name="email"
           value={form.email}
           id="email"
           onChange={(e) => handleChange(e)}
-          required
+        
         />
 
         <label htmlFor="psw">
@@ -75,7 +72,7 @@ const SampleForm = () => {
           id="psw"
           value={form.password}
           onChange={(e) => handleChange(e)}
-          required
+        
         />
 
         <label htmlFor="psw-repeat">
@@ -88,9 +85,46 @@ const SampleForm = () => {
           onChange={(e) => handleChange(e)}
           id="psw-repeat"
           value={form.confirmPassword}
-          required
+        
         />
         <hr />
+
+        <label htmlFor="role">Choose Role:</label>
+        <select onChange={(e) => handleChange(e)} name="role">
+          <option value="student">Student</option>
+          <option value="teacher">Teacher</option>
+          <option value="professional">Professional</option>
+        </select>
+        <hr />
+
+        <label htmlFor="favorite_language">Favorite Language</label>
+        <br/>
+        <input
+          onChange={(e) => handleChange(e)}
+          type="radio"
+          id="html"
+          name="favorite_language"
+          value="HTML"
+        />
+        <label htmlFor="html">HTML</label>
+        <br />
+        <input
+          onChange={(e) => handleChange(e)}
+          type="radio"
+          id="css"
+          name="favorite_language"
+          value="CSS"
+        />
+        <label htmlFor="css">CSS</label>
+        <br />
+        <input
+          onChange={(e) => handleChange(e)}
+          type="radio"
+          id="javascript"
+          name="favorite_language"
+          value="JavaScript"
+        />
+        <label htmlFor="javascript">JavaScript</label>
 
         <button type="submit" className="registerbtn">
           Register
