@@ -4,7 +4,8 @@ import "./App.css";
 import React, { Component } from "react";
 // import Exercise10 from "./components/Exercise10";
 // import SampleForm from "./components/SampleForm";
-import SampleForm2 from "./components/SampleForm2";
+// import SampleForm2 from "./components/SampleForm2";
+import CounterAddReset from "./components/UseReducerHook.jsx/CounterAddReset";
 // import CounterFour from "./components/UseReducerHook.jsx/CounterFour";
 // import UserContextComponent from "./components/UseContextHook/UserContextComponent";
 // import CounterReducer from "./components/UseReducerHook.jsx/CounterReducer";
@@ -94,7 +95,8 @@ class App extends Component {
           </UserContext.Provider> */}
           {/* <Exercise10 /> */}
           {/* <SampleForm /> */}
-          <SampleForm2 />
+          {/* <SampleForm2 /> */}
+          <CounterAddReset/>
         </main>
       </React.Fragment>
     );
