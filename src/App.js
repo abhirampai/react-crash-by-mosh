@@ -2,7 +2,8 @@ import "./App.css";
 // import NavBar from "./components/navbar";
 // import Counters from "./components/counters";
 import React, { Component } from "react";
-import ParentComponent from "./components/UseReducerandUseContext/ParentComponent";
+// import ParentComponent from "./components/UseReducerandUseContext/ParentComponent";
+import FetchUsingUseReducer from "./components/UseReducerHook.jsx/FetchUsingUseReducer";
 // import Exercise10 from "./components/Exercise10";
 // import SampleForm from "./components/SampleForm";
 // import SampleForm2 from "./components/SampleForm2";
@@ -100,7 +101,8 @@ class App extends Component {
           {/* <SampleForm2 /> */}
           {/* <CounterAddReset/> */}
           {/* <FetchPostData /> */}
-          <ParentComponent />
+          {/* <ParentComponent /> */}
+          <FetchUsingUseReducer/>
         </main>
       </React.Fragment>
     );
