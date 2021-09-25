@@ -62,16 +62,13 @@ export default function App() {
       });
   }, []);
 
-  const filter = (search) => {
-    setTableData(
-      tableData.filter((item) =>
-        item.some((row) => row.toLowerCase().includes(search))
-      )
+  const filter = (data, search) => {
+    return data.filter((item) =>
+      item.some((row) => row.toLowerCase().includes(search))
     );
   };
 
   const handleChange = (e) => {
-    filter(e.target.value);
     setInput(e.target.value);
   };
 
@@ -122,7 +119,7 @@ export default function App() {
           </tr>
         </thead>
         <tbody>
-          {tableData.map((user, userIdx) => (
+          {filter(tableData, input).map((user, userIdx) => (
             <tr key={userIdx}>
               {user.map((cellValue, cellValueIdx) => (
                 <td key={`${userIdx}-${cellValueIdx}`}>{cellValue}</td>
